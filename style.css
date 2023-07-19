@@ -8,12 +8,91 @@ body{
     
 }
 
+
+
 /* HEADER */
 
 .header{
     display: grid;
-    grid-column: 2/4;
+    height: 200px;
     background-color: #08415c;
+}
+
+.search{
+    padding-left: 100px;
+    padding-top: 32px;
+}
+
+.search-bar{
+    padding-left: 35px;
+    margin-top: -25px;
+}
+#search-bar{
+    width: 400px;
+    border: 1px solid  #f0e130;
+    border-radius: 20px;
+}
+
+.profile-notif{
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    gap: 20px;
+    padding-left: 800px;
+    margin-top: -20px;
+    
+}
+
+.profile-notif p{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 1px;
+    color: #f0e130;
+}
+
+.user-info-details{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 30px 50px 30px;
+    gap: 100px;
+}
+
+.greet{
+    width: 200px;
+
+}
+
+.greet .hello{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #f0e130;
+}
+
+.greet .name{
+    font-size: 30px;
+    margin-top: -5px;
+    color: #f0e130;
+}
+
+
+.creation{
+    padding-left: 700px;
+    margin-top: -50px;
+}
+
+.studio{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 30px;
+
+}
+
+.studio button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid #08415c;
+    border-radius: 20px;
+    color: #08415c;
+    background-color: #f0e130;
 }
 
 
