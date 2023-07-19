@@ -4,7 +4,8 @@ body{
 
 .main-container{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 200px (100% - 200px);
     
 }
 
@@ -15,6 +16,7 @@ body{
 .header{
     display: grid;
     height: 200px;
+    grid-column: 2/4;
     background-color: #08415c;
 }
 
@@ -29,7 +31,7 @@ body{
 }
 #search-bar{
     width: 400px;
-    border: 1px solid  #f0e130;
+    border: 3px solid  #f0e130;
     border-radius: 20px;
 }
 
@@ -76,7 +78,7 @@ body{
 
 .creation{
     padding-left: 700px;
-    margin-top: -50px;
+    margin-top: -65px;
 }
 
 .studio{
@@ -160,5 +162,106 @@ body{
     margin-left: -150px;
     font-family: sans-serif;
     font-weight: 600;
+
+}
+
+
+/* content */
+
+.content{
+    grid-column: 2/4;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    margin-top: -500px;
+    margin-left: 10px;
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 50px;
+}
+
+.card01 img,
+.card02 img,
+.card03 img,
+.card04 img{
+    display: flex;
+    margin-left: 350px;
+}
+
+.card01,
+.card02,
+.card03,
+.card04{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #08415c;
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 #08415c;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #08415c;
+}
+
+
+
+
+.card02{
+    grid-row: 2;
+}
+
+.card03{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.card03,
+.card04{
+    margin-left:250px;
+}
+
+.announcement-card{
+
+    margin-bottom: 10px;
+    border: 1px solid #08415c;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 #f0e130;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #08415c;
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 480px;
+    text-align: center;
+
+
+}
+
+.trending-card{
+    margin-bottom: 10px;
+    border: 1px solid #08415c;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 #f0e130;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #08415c;
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 480px;
+    margin-top: 100px;
+    text-align: center;
+
 
 }
